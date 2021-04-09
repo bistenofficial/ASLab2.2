@@ -6,42 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="92dp"
-        android:text="Рост:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="48dp"
-        android:text="Вес:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHeight" />
-
-    <TextView
-        android:id="@+id/textViewAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="52dp"
-        android:text="Возраст:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewWeight" />
-
     <Button
         android:id="@+id/buttonMath"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:onClick="math"
         android:text="Рассчитать"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberAge" />
@@ -51,43 +22,120 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="19dp"
-        android:text="Отмена"
+        android:layout_marginTop="8dp"
         android:onClick="cls"
+        android:text="Отмена"
         app:layout_constraintStart_toEndOf="@+id/buttonMath"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberAge" />
-
-    <EditText
-        android:id="@+id/editTextNumberWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textViewWeight"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberHeight" />
-
-    <EditText
-        android:id="@+id/editTextNumberHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="80dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textViewHeight"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextNumberAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/textViewAge"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberWeight" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Возраст:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeight" />
+
+    <EditText
+        android:id="@+id/editTextNumberHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewHeight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="120dp"
+        android:text="Рост:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:text="Вес:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeight" />
+
+    <EditText
+        android:id="@+id/editTextNumberWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textViewWeight"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberHeight" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
+        android:text="Ваш BMR"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberHeight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDefBMR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberHeight"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMale"
+        android:layout_width="85dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:onClick="select"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/male_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFemale"
+        android:layout_width="85dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:onClick="select"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMale"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/female_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
