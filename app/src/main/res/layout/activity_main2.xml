@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="598dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="35dp"
+        android:text="Сидячий образ Нет работы или работа за столом ||| Маленькая активность	Мало физических работы или занятия спортом 1-3 раза в неделю ||| Средняя активность	Умеренная физическая работа или занятия спортом 3 - 5 дней в неделю ||| Сильная активность	Сильные физическая нагрузка или занятия спортом 6 - 7 дней в неделю ||| Максимальная активность	Сильная ежедневная физическая нагрузка или спорт и физическая работа "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="559dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="208dp"
+        android:onClick="back"
+        android:text="Назад"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

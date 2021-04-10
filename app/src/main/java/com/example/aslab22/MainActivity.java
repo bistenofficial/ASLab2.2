@@ -2,6 +2,7 @@ package com.example.aslab22;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -111,5 +112,17 @@ public class MainActivity extends AppCompatActivity {
             default:
                 break;
         }
+
     }
+    public void info(View v)
+    {
+        switch (v.getId()) {
+            case R.id.imageButton:
+                Intent intent = new Intent(this,MainActivity2.class);
+                startActivity(intent);;
+                break;
+            default:
+                break;
+    }
+}
 }
