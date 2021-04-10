@@ -96,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="4dp"
         android:text="Ваш BMR"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/editTextNumberHeight"
@@ -106,8 +106,8 @@
         android:id="@+id/textViewDefBMR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="8dp"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/editTextNumberHeight"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -137,5 +137,67 @@
         app:layout_constraintStart_toEndOf="@+id/imageButtonMale"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/female_icon" />
+
+    <TextView
+        android:id="@+id/textViewDailyinf"
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="54dp"
+        android:text="Ежедневно тратится калорий "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberHeight"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewMAx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="7dp"
+        android:text="Максимальная активность:"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLarge" />
+
+    <TextView
+        android:id="@+id/textViewLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="8dp"
+        android:text="Малая активность:"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberAge"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPassive" />
+
+    <TextView
+        android:id="@+id/textViewLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="9dp"
+        android:text="Высокая активность:"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMiddle" />
+
+    <TextView
+        android:id="@+id/textViewPassive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="31dp"
+        android:text="Сидячий:"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberWeight"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDailyinf" />
+
+    <TextView
+        android:id="@+id/textViewMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="9dp"
+        android:text="Средняя активность:"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberAge"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
