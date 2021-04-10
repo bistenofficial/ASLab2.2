@@ -157,6 +157,7 @@
         android:layout_marginStart="71dp"
         android:layout_marginTop="7dp"
         android:text="Максимальная активность:"
+        android:textColor="#A80000"
         app:layout_constraintStart_toEndOf="@+id/buttonCancel"
         app:layout_constraintTop_toBottomOf="@+id/textViewLarge" />
 
@@ -167,6 +168,7 @@
         android:layout_marginStart="109dp"
         android:layout_marginTop="8dp"
         android:text="Малая активность:"
+        android:textColor="#07FF4D"
         app:layout_constraintStart_toEndOf="@+id/editTextNumberAge"
         app:layout_constraintTop_toBottomOf="@+id/textViewPassive" />
 
@@ -177,6 +179,7 @@
         android:layout_marginStart="71dp"
         android:layout_marginTop="9dp"
         android:text="Высокая активность:"
+        android:textColor="#FF0707"
         app:layout_constraintStart_toEndOf="@+id/buttonCancel"
         app:layout_constraintTop_toBottomOf="@+id/textViewMiddle" />
 
@@ -187,6 +190,7 @@
         android:layout_marginStart="107dp"
         android:layout_marginTop="31dp"
         android:text="Сидячий:"
+        android:textColor="@color/purple_700"
         app:layout_constraintStart_toEndOf="@+id/editTextNumberWeight"
         app:layout_constraintTop_toBottomOf="@+id/textViewDailyinf" />
 
@@ -197,6 +201,7 @@
         android:layout_marginStart="109dp"
         android:layout_marginTop="9dp"
         android:text="Средняя активность:"
+        android:textColor="#FFC107"
         app:layout_constraintStart_toEndOf="@+id/editTextNumberAge"
         app:layout_constraintTop_toBottomOf="@+id/textViewLow" />
 

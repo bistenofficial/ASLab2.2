@@ -89,11 +89,11 @@ public class MainActivity extends AppCompatActivity {
     public void output(View v,double solve)
     {
         defBMR.setText(Double.toString(solve));
-        Passive.setText(Double.toString(solve*1.2));
-        Low.setText(Double.toString(solve*1.375));
-        Middle.setText(Double.toString(solve*1.55));
-        Large.setText(Double.toString(solve*1.725));
-        defBMR.setText(Double.toString(solve*1.9));
+        Passive.setText(Passive.getText().toString()+Double.toString(solve*1.2));
+        Low.setText(Low.getText().toString()+Double.toString(solve*1.375));
+        Middle.setText(Middle.getText().toString()+Double.toString(solve*1.55));
+        Large.setText(Large.getText().toString()+Double.toString(solve*1.725));
+        Max.setText(Max.getText().toString()+Double.toString(solve*1.9));
     }
     public void select(View v)
     {
