@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public TextView defBMR;
     int tf= 10;
     double ageInt,weightInt,heightInt;
+    private static final String TAG = "MyApp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,7 +144,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.log_settings:
-                headerView.setText("Открыть");
+                Log.i(TAG, "Возраст:"+Age.getText().toString());
+                Log.i(TAG, "Вес"+Weight.getText().toString());
+                Log.i(TAG, "Рост:"+Height.getText().toString());
+                if (tf==1) Log.i(TAG, "Пол - мужской");
+                else Log.i(TAG, "Пол - женский");
                 return true;
         }
         return super.onOptionsItemSelected(item);
