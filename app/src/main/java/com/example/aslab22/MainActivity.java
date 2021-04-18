@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -125,4 +127,26 @@ public class MainActivity extends AppCompatActivity {
                 break;
     }
 }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        TextView headerView = (TextView) findViewById(R.id.textViewInfo);
+        switch(id){
+            case R.id.action_settings :
+                Intent intent = new Intent(this,MainActivityInfo.class);
+                startActivity(intent);
+                return true;
+            case R.id.log_settings:
+                headerView.setText("Открыть");
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
 }
